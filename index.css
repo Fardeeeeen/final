@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color:rgb(100 116 139);
+
+}
+
+.background-image {
+    background-image: url('Building.jpeg'); 
+    background-size: cover; 
+    background-attachment: scroll; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%;
+    height: 400vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page1 div {
+    font-size: 90px;
+    font-weight: 500;
+}
+
+.conner {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 510px;
+    border-top-left-radius: 50px;
+    box-shadow: -6px -11px rgb(249, 115, 22);
+}
+
+.conner1 {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 520px;
+    border-top-right-radius: 55px;
+    box-shadow: 8px -11px rgb(249, 115, 22);
+}
+
+.page2 {
+    height: 122vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.page3 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.page3 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page3 .main-image {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 50%; 
+    object-fit: cover;
+    margin: 0;
+    transition: transform 1s ease-out, width 1s ease-out, height 1s ease-out;
+}
+
+.page3 .text {
+    position: relative;
+    width: 50%;
+    padding: 1rem;
+    color: white;
+    margin-right: 5%;
+}
+
+.page3 .text .para {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    opacity: 0; 
+    transform: translateY(50%);
+    transition: transform 1s ease-out, opacity 1s ease-out; 
+}
+
+.page3 .text .para img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.page3 .text h1 {
+    font-size: 3rem;
+    background-color:rgb(100 116 139);
+    color: #fff;
+    margin-top: 1rem;
+    opacity: 0; 
+    transform: translateX(-50%);
+    transition: transform 1s ease-out, opacity 1s ease-out; 
+    padding:30px;
+    right:50px;
+}
+
+
+.content {
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.para{
+   background-color:rgb(204, 215, 231);
+    padding: 30px;
+    border-radius: 15px;
+}
